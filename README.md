@@ -1,2 +1,5 @@
 # Algorithm-Habit
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+
+## 2026년부터 시작
+- 2026.01.09 부터 꾸준히 진행
+- 2026.02.27 부터 백준 허브로 깃허브랑 연동 시작. -> 2개월 동안 푼 문제 한 번에 커밋
