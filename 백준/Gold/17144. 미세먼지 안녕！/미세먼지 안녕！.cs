@@ -59,7 +59,7 @@ public class CSharpHabit
 
         int[,] GetMoveAfterArr()
         {
-            var retArr = new int[maxRow + 2, maxCol + 2];
+            var retArr = arr.Clone() as int[,];
             
             // 2500
             for (int r = 0; r <= maxRow+1; r++)
@@ -105,7 +105,7 @@ public class CSharpHabit
 
         int[,] GetAfterCleanArr()
         {
-            var retArr = new int[maxRow + 2, maxCol + 2];
+            var retArr = arr.Clone() as int[,];
             
             // 2500
             for (int r = 0; r <= maxRow+1; r++)
