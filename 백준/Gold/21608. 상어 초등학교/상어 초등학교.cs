@@ -89,19 +89,13 @@ public class CSharpHabit
                         {
                             maxFriendCount = friendCount;
                             maxSpaceCount = spaceCount;
-                            
-                            rcPair.Item1 = r;
-                            rcPair.Item2 = c;
+                            rcPair = (r, c);
                         }
                         
                         if (maxFriendCount == friendCount && maxSpaceCount < spaceCount)
                         {
                             maxSpaceCount = spaceCount;
-                            
-                            rcPair.Item1 = r;
-                            rcPair.Item2 = c;
-                            
-                            continue;
+                            rcPair = (r, c);
                         }
                     }
                 }
@@ -114,6 +108,8 @@ public class CSharpHabit
         {
             int friendCount = 0;
             int spaceCount = 0;
+
+            var targetHashSet = dict[targetStudentNum];
             
             for (int idx = 0; idx < 4; idx++)
             {
@@ -131,7 +127,7 @@ public class CSharpHabit
                     continue;
                 }
 
-                if (neighborStudentNum >= 1 && dict[targetStudentNum].Contains(neighborStudentNum))
+                if (neighborStudentNum >= 1 && targetHashSet.Contains(neighborStudentNum))
                 {
                     friendCount++;
                 }
