@@ -1,5 +1,3 @@
-<br>
-
 ## 백준 골드
 - ✈️ [백준 골드](https://github.com/pjw960316/Algorithm-Habit/tree/main/%EB%B0%B1%EC%A4%80/Gold)
 
