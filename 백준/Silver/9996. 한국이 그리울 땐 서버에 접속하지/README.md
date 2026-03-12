@@ -1,4 +1,4 @@
-# [Silver III & 대학생 때 풀지 못한 문제] 한국이 그리울 땐 서버에 접속하지 - 9996 
+# [Silver III & pjw960316 실패 문제] 한국이 그리울 땐 서버에 접속하지 - 9996 
 
 [문제 링크](https://www.acmicpc.net/problem/9996) 
 
