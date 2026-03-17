@@ -10,20 +10,21 @@ public class CSharpHabit
         int n,tc;
         int tcMax = int.Parse(Console.ReadLine());
         var arr = new char[3];
+        
+        // note : 이게 핵심이었다. -> ASCII 순서 정렬
         arr[0] = ' ';
         arr[1] = '+';
         arr[2] = '-';
 
         var answerSb = new StringBuilder();
         var list = new List<string>();
+        
         for (tc = 0; tc < tcMax; tc++)
         {
             n = int.Parse(Console.ReadLine());
             var sb = new StringBuilder();
             
             DFS(1,sb);
-            
-            //list.Sort();
                 
             foreach (var str in list)
             {
@@ -42,7 +43,6 @@ public class CSharpHabit
             
             if (num == n)
             {
-                //Console.WriteLine(sb);
                 if (MeasureStatement(sb) == 0)
                 {
                     list.Add(sb.ToString());
@@ -87,20 +87,13 @@ public class CSharpHabit
                     {
                         if (curGiho == '+')
                         {
-                            //Console.WriteLine($"{curGiho} : {tmpSb.ToString()}");
                             ret += int.Parse(tmpSb.ToString());
                         }
                         else
                         {
-                            //Console.WriteLine($"{curGiho} : {tmpSb.ToString()}");
                             ret -= int.Parse(tmpSb.ToString());
                         }
                         
-                        /*if (sb.ToString() == "1-2+3+4-5+6 7")
-                        {
-                            Console.WriteLine($"answer : {idx} , {len}, {tmpSb} , {answer}");
-                        }*/
-
                         return ret;
                     }
                 }
@@ -112,12 +105,10 @@ public class CSharpHabit
                 {
                     if (curGiho == '+')
                     {
-                        //Console.WriteLine($"{curGiho} : {tmpSb.ToString()}");
                         ret += int.Parse(tmpSb.ToString());
                     }
                     else
                     {
-                        //Console.WriteLine($"{curGiho} : {tmpSb.ToString()}");
                         ret -= int.Parse(tmpSb.ToString());
                     }
                     
