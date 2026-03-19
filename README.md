@@ -10,14 +10,14 @@
 <br>
 
 - 💿 **[Silver]**
-  - 2026.01.22 : Silver_5 달성!
-  - 2026.02.02 : Silver_4 달성!
-  - 2026.02.10 : Silver_3 달성!
-  - 2026.02.18 : Silver_2 달성! 
-  - 2026.02.27 : 지금까지 푼 문제를 Baekjoon Hub로 GitHub에 업로드!
-  - 2026.03.03 : Silver_1 달성!
+  - 2026.01.22 &nbsp;:&nbsp; Silver_5 달성!
+  - 2026.02.02 &nbsp;:&nbsp; Silver_4 달성!
+  - 2026.02.10 &nbsp;:&nbsp; Silver_3 달성!
+  - 2026.02.18 &nbsp;:&nbsp; Silver_2 달성! 
+  - 2026.02.27 &nbsp;:&nbsp; 지금까지 푼 문제를 Baekjoon Hub로 GitHub에 업로드!
+  - 2026.03.03 &nbsp;:&nbsp; Silver_1 달성!
 
 <br>
 
 - 📀 **[Gold]**
-  - 2026.03.19 : Gold_5 달성!
+  - 2026.03.19 &nbsp;:&nbsp; Gold_5 달성!
