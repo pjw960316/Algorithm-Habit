@@ -29,9 +29,9 @@ public class CSharpHabit
         {
             arr[i] = i;
         }
-        var originArr = arr.Clone() as int[];
 
         var hashSet = new HashSet<string>();
+        
         int count = 0;
         while (true)
         {
@@ -46,8 +46,8 @@ public class CSharpHabit
                 Console.Write(count);
                 return;
             }
+            
             arr = Mix();
-
             count++;
         }
         
