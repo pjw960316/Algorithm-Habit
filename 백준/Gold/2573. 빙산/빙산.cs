@@ -12,8 +12,6 @@ using System;
          int cMax = int.Parse(line[1]);
          
          var arr = new int[rMax + 2, cMax + 2];
-         var nextArr = new int[rMax + 2, cMax + 2];
-         
          var path = new (int, int)[4];
          path[0] = (-1, 0);
          path[1] = (1, 0);
@@ -45,13 +43,14 @@ using System;
                  return;
              }
 
-             GoYear();
-             DeepCopy();
+             arr = GoYear();
              curYear++;
          }
 
-         void GoYear()
+         int[,] GoYear()
          {
+             var retArr = arr.Clone() as int[,];
+             
              for (int r = 1; r <= rMax; r++)
              {
                  for (int c = 1; c <= cMax; c++)
@@ -66,22 +65,11 @@ using System;
                          }
                      }
 
-                     nextArr[r, c] = Math.Max(0,arr[r, c] - iceSum);
-                 }
-             }
-         }
-
-         void DeepCopy()
-         {
-             for (int r = 1; r <= rMax; r++)
-             {
-                 for (int c = 1; c <= cMax; c++)
-                 {
-                     arr[r, c] = nextArr[r, c];
+                     retArr[r, c] = Math.Max(0,arr[r, c] - iceSum);
                  }
              }
 
-             Array.Clear(nextArr);
+             return retArr;
          }
 
          bool IsSeperated()
@@ -134,7 +122,7 @@ using System;
                          if (arr[newR, newC] > 0 && visit[newR,newC] == false)
                          {
                              queue.Enqueue((newR, newC));
-                             visit[newR, newC] = true;
+                             visit[newR,newC] = true;
                          }
                      }
                  }
