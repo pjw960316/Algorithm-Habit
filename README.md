@@ -21,3 +21,4 @@
 
 - 📀 **[Gold]**
   - 2026.03.19 &nbsp;:&nbsp; Gold_5 달성
+  - 2026.04.10 &nbsp;:&nbsp; Gold_4 달성
