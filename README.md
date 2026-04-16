@@ -1,8 +1,3 @@
-## 백준 골드
-- ✈️ [백준 골드](https://github.com/pjw960316/Algorithm-Habit/tree/main/%EB%B0%B1%EC%A4%80/Gold)
- 
-<br><br>
-
 ## 2026년부터 시작
 - 🍀 **[Start]**
   - 2026.01.11 &nbsp;:&nbsp; C#으로 백준 알고리즘 시작
@@ -28,3 +23,8 @@
 - :sob: **[백준 사이트 서비스 종료]**
   - 2026.04.15 &nbsp;:&nbsp; 백준 사이트 서비스 종료 확인
   - 2026.04.16 &nbsp;:&nbsp; 프로그래머스로 이주 :rowboat:
+
+<br><br>
+
+## 백준 골드
+- ✈️ [백준 골드](https://github.com/pjw960316/Algorithm-Habit/tree/main/%EB%B0%B1%EC%A4%80/Gold)
