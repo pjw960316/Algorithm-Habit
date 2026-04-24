@@ -21,8 +21,6 @@ using System.Text;
 using System.Linq;
 using System.Collections.Generic;
 
-// TODO : Programmer에서 Solution Class 복사하세요. 
-
 public class Program
 {
     public static void Main()
@@ -50,7 +48,17 @@ public static class Input
 
     public static int[] ReadInts()
     {
-        return Console.ReadLine().Split().Select(int.Parse).ToArray();
+        var input = Console.ReadLine();
+        if (input == null)
+            return Array.Empty<int>();
+
+        // [ ] 제거
+        input = input.Trim('[', ']');
+
+        return input
+            .Split(',')
+            .Select(x => int.Parse(x.Trim()))
+            .ToArray();
     }
 
     public static string ReadString()
@@ -63,14 +71,31 @@ public static class Input
         return Console.ReadLine().Split();
     }
 
-    public static int[,] ReadMatrix(int n, int m)
+    public static int[,] ReadIntMatrix()
     {
-        var arr = new int[n, m];
-        for (var i = 0; i < n; i++)
+        var input = Console.ReadLine();
+        if (input == null)
         {
-            var row = ReadInts();
-            for (var j = 0; j < m; j++)
-                arr[i, j] = row[j];
+            return new int[1, 1];
+        }
+
+        // 외곽 괄호 제거
+        input = input.Substring(2, input.Length - 4); 
+
+        var line = input.Split(["], ["], StringSplitOptions.None);
+
+        var rowMax = line.Length;
+        var colMax = line[0].Split(',').Length;
+        var arr = new int[rowMax, colMax];
+
+        for (int r = 0; r < rowMax; r++)
+        {
+            var cols = line[r].Split(',');
+
+            for (int c = 0; c < colMax; c++)
+            {
+                arr[r,c] = int.Parse(cols[c]);
+            }
         }
 
         return arr;
