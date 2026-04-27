@@ -68,7 +68,18 @@ public static class Input
 
     public static string[] ReadStrings()
     {
-        return Console.ReadLine().Split();
+        var input = Console.ReadLine();
+        if (input == null)
+        {
+            return Array.Empty<string>();
+        }
+
+        input = input.Trim('[', ']');
+
+        return input
+            .Split(',')
+            .Select(x => x.Trim().Trim('"'))
+            .ToArray();
     }
 
     public static int[,] ReadIntMatrix()
