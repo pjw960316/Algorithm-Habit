@@ -9,7 +9,7 @@
 #### :two: 해결방식
 - Rider에서 Code Template을 만들어 놓는다.
 - Rider에서 테스트를 완료한다.
-- GPT를 이용해서 Rider의 코드를 Programmers 형식 (c# 6.0)으로 변환시켜서 제출한다.
+- 프로그래머스에서 제공하는 answer은 사용하지 않는다. 리턴 타입의 형식만 알려주는 변수다.
 
 <br><br>
 
