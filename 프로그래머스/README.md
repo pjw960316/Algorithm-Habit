@@ -27,9 +27,8 @@ public class Program
     {
         var sol = new Solution();
 
-        // TODO : Static Input Class의 메서드를 활용해서 Input 받으세요.
-
-        // TODO : solution 메서드에 인자를 넣으세요.
+        // TODO
+        // Static Input Class의 메서드를 활용해서 solution 메서드에 인자를 넣으세요.
         Console.Write(sol.solution());
     }
 }
