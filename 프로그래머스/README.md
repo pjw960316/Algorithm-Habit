@@ -2,6 +2,7 @@
 #### :one: 단점
 - 프로그래머스의 컴파일러는 C# 6.0이다.
   - local function 사용 불가
+  - Tuple 사용 불가
 - 프로그래머스 사이트에서 코딩하는 방식은 불편하다.
 
 <br>
@@ -10,6 +11,7 @@
 - Rider에서 Code Template을 만들어 놓는다.
 - Rider에서 테스트를 완료한다.
 - 프로그래머스에서 제공하는 answer은 사용하지 않는다. 리턴 타입의 형식만 알려주는 변수다.
+- Tuple 대신 public DTO Class를 만들어서 사용한다.
 
 <br><br>
 
